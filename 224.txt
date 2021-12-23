@@ -1,0 +1,9 @@
+Bootstrap components
+1. Starter Template
+2. Carousel
+3. Card
+4. Offcanvas
+5. Modal
+6. Navigation
+7. Grid
+8. Collapse
