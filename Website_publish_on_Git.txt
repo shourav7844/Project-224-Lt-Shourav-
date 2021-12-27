@@ -1,0 +1,28 @@
+1. open the folder to be published
+2. Right click mouse > click Github on bash
+>Command
+$git status
+ git init  //.git file will be created(tracking not started)//entering
+ git add index.html    //track only homepage.html
+ git add .   //track all the files
+ git commit -m "init version"   //make a version named "init version" which is add by previous command "git add ."
+ git log    //show the number of version or snapshot of the software along with time, date and author
+
+
+
+git config --global user.email "nahidhasan7844@gmail.com"
+git config --global user.name "Shourav"  // account is created
+
+//publishing the webiste on Github
+1. Sign up in Github
+2. Sign in Github
+3. Create new repository(public) (with brower)
+4. form there memorize 3 commands and put the commands in Git bash window  //for first time only
+5. "git push" command in git bash prompt  //publish the latest version in github
+
+
+ git checkout --.     // revert the uncommitted changes
+
+///revert to previous state
+ git revert "git number"///((the version to be reverted) recommended)
+ git reset "git number"(the version where I want to go)

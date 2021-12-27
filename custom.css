@@ -403,3 +403,25 @@ footer .f2 ul li{
     display: inline-block;
     width: 350px;
 }
+.h5h{
+    font-family: 'Acme', sans-serif;
+    letter-spacing: 2px;
+}
+
+.tt{
+    transition: transform 250ms;
+    margin-top: 20px;
+}
+.tt:hover{
+    transform: translateY(-15px);
+}
+.me{
+    transition: transform 250ms;
+}
+.me:hover{
+    transform: scale(1.3);
+}
+
+#services{
+    padding: 100px 0px;
+}
