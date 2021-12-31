@@ -8,3 +8,12 @@ Bootstrap components
 7. Grid
 8. Collapse
 9. Breadcrumb
+
+
+
+nav&tab
+hamburgur
+graphics video rating
+add navbar to each page
+to keep color combination same
+validation
