@@ -25,23 +25,34 @@ float: right;
 }
 .first_section{
 background-color: #DAEAFF;
-height: auto;
+height: 40rem;
 }
+
+.first_section img{
+    width: 100%;
+    height: auto;
+}
+
+.carousel-inner .carousel-item img{
+    width: 100%;
+    height: auto;
+}
+
 .navbar ul li{
     display: inline;
 }
 .first_section .container{
     background-image: url(images/Ways-in-Which-Web-Application-Development-is-Changing.png);
     background-repeat: no-repeat;
-    height: 600px;
+    width: 100%;
+    height: auto;
 }
 
 
 .first_section .container .row h1{
-    font-size: 70px;
+    font-size: 7rem;
     color: #db4b76;
     font-family: 'Moon Dance', cursive;
-
     }
     .first_section .container .row ul li{
         display: inline;
@@ -96,6 +107,11 @@ height: auto;
 
 .clear{
     clear: both;
+}
+
+.blog11{
+    background-color: #61aafdb4;
+
 }
 
 .blog1 .container .car img{
@@ -174,7 +190,7 @@ ul li{
 .home{
         background-image: url(fg.jpg);  
         width: 100%;
-        height: 500px;
+        height: 42rem auto;
         background-size: cover;
         background-position: center;
         z-index: 2;
@@ -196,15 +212,16 @@ ul li{
 
 .no{
     padding: 80px 0px;
-    height: 700px;
+    height: 42rem;
     color: #f5a694;
 }
 .no h1{
     font-family: 'Corinthia', cursive;
-    font-size: 80px;
+    font-size: 5rem;
 }
 .no h3{
     font-family: cursive;
+    font-size: auto;
 }
 
 .flexx{
@@ -335,18 +352,18 @@ footer .f2 ul li{
 }
 .weebd{
     background-color: rgb(255, 255, 255);
-    padding: 10px 20px;
+    padding: .5rem .5rem;
     margin-bottom: 0px;
-    color: rgba(22, 207, 136, 0.61);
+    color: rgb(112, 233, 221);
     font-style: oblique;  
 }
 .weebbd{
-    background-color: rgba(22, 207, 136, 0.61);
-    padding: 10px 20px;
-    width: 800px;
+    background-color: rgb(112, 233, 221);
+    padding: .5rem .5rem .5rem .5rem;
     margin-top: 0px;
     color: white;
     font-style: oblique;
+    width: 40rem;
 }
 .weed{
     font-family: 'Acme', sans-serif;
@@ -387,6 +404,7 @@ footer .f2 ul li{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     letter-spacing: 2px;
     font-size: 40px;
+    color: rgb(44, 104, 214);;
 }
 .hh5{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -394,6 +412,9 @@ footer .f2 ul li{
     font-weight: bold;
 }
 
+.blk_ll{
+    background-color: rgb(44, 104, 214);
+}
 
 .blk_l img{
     width: 80px;
@@ -427,21 +448,44 @@ footer .f2 ul li{
 }
 
 .initial{
-    background-image: url(fg.jpg);
+    background-image: url(images/background_image.jpg);
     background-attachment: fixed;
     position: relative;
-    z-index: 2;
+    z-index: -1;
     width: 100%;
-    height: 500px;
+    height: fit-content;
+
 
 }
 
-.initial::after{
+.initiall::after{
+    top: 0%;
+    bottom: 0%;
     position: absolute;
-    background-color: black;
-    z-index: -1;
-    opacity: .5;
+    background-color: rgb(96, 240, 156);
+    z-index: 2;
+    opacity: .3;
     content: "";
     height: 100%;
     width: 100%;
 }
+
+
+
+#expertise{
+    background-color: #61aafd;
+}
+
+.addOns{
+    background-color: rgb(112, 233, 221);
+}
+
+.md-hamb {
+    display: inline-block;
+}
+
+/* This changes all the animations globally */
+:root {
+    --animate-duration: 5s;
+    --animate-delay: 0.9s;
+  }

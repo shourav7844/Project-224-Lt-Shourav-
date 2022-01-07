@@ -15,15 +15,81 @@
     <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
     <title>Web Designing</title>
   </head>
   <body>
+
+	<!----Navigation Bar------>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+   
+    <nav class="logo navbar-light bg-light">
+     <div class="container-fluid">
+       <a class="navbar-brand" href="#">
+         <img src="images/log.png" width="80" height="40" alt=""  class="">
+         Learn; Design & Develop
+       </a>
+     </div>
+    </nav>
+   
+    <div class="nav_right">
+     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+       <div class="container-fluid">
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+             <li class="nav-item">
+               <a class="nav-link" href="homepage.html">Home</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="portfolio.html">Portfolio</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="myBlog.html">Blogs</a>
+             </li>
+             <li class="nav-item">
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                Help
+              </button>
+  
+  
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Help</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Learn; Design & Develop is a user frinedly website to help you with the basic and signigicant information of design and develop. The design and development includes about the digital arts. Actually you can explore the all criterias of the 3 Segments of digital design. Those are Graphics Design, Web design and Web Development. If you are not finding the first page of the website, click on the Home on the navigation bar. If you have any query about the informations provided on the website, simply contact us on through the contact form. We'll be very happy to clearify your query which should inhance you skills.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+           <div class="closeMenu"><i class="fa fa-times"></i></div>
+         </ul>
+   
+       </div>
+     </div>
+    </div>
+   </div>
+   </nav>
 
         <!-----First Section----->
         <div class="first_web py-5">
             <div class="web container">
                 <div class="row">
-                  <div class="col-lg-6 col-sm-6 d-flex align-items-center">
+                  <div class="col-lg-6 col-sm-6 d-flex align-items-center  wow animate__animated animate__lightSpeedInLeft animate_slower">
                     <div class="title_web">
                         <h1 class="weeb">Web</h1>
                         <h1 class="weebb">Designing</h1>
@@ -39,7 +105,7 @@
 
                   </div>
                 </div>
-                <div class="col-lg-6 col-sm-6">
+                <div class="col-lg-6 col-sm-6 wow animate__animated animate__slideInDown">
                   <div class="title_web gif py-3 d-flex justify-content-center">
                     <img src="images/web1.gif" alt="">
                   </div>
@@ -48,7 +114,7 @@
                 <div class="row">
                               <!----Navigation Bar------>
             <div class="nav-item navv pt-5">
-              <p class="d-flex justify-content-center">
+              <p class="d-flex justify-content-center  wow animate__animated animate__lightSpeedInRight ">
               <a class="btn btn-primary m-2" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Personal</a>
               <button class="btn btn-primary m-2" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Social</button>
               <button class="btn btn-primary m-2" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">Official</button>
@@ -77,7 +143,7 @@
                         </div>            </div>
                 </div>
               </div>
-              <div class="col-lg-3 col-sm-6">
+              <div class="col-lg-3 col-sm-6 ">
                   <div class="collapse multi-collapse" id="multiCollapseExample3">
                     <div class="card card-body">
                         <div class="card" style="width: 18rem;">
@@ -111,7 +177,7 @@
 <div class="second_section py-5">
     <div class="container">
         <div class="row py-5">
-            <div class="col-lg-6 col-sm-12">
+            <div class="col-lg-6 col-sm-12  wow animate__animated animate__fadeInRightBig">
                 <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
                     <div class="carousel-inner">
                       <div class="carousel-item active">
@@ -134,17 +200,17 @@
                     </button>
                   </div>
             </div>
-            <div class="col-lg-6 col-sm-12">
+            <div class="col-lg-6 col-sm-12  wow animate__animated animate__fadeInLeftBig">
                 <h3>Web  ??</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias aspernatur ducimus, nostrum non rerum illum doloribus est eum temporibus nam quas adipisci laborum quisquam ullam in, nesciunt eaque aliquid aut. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam, molestias quisquam dolore dolorum praesentium, optio excepturi eum laudantium obcaecati atque labore distinctio dolor. Itaque repellat error tenetur hic facere. Et.</p>
             </div>
         </div>
         <div class="row py-5">
-            <div class="col-lg-6 col-sm-12">
+            <div class="col-lg-6 col-sm-12  wow animate__animated animate__fadeInLeftBig">
                 <h3>Design  !!</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias aspernatur ducimus, nostrum non rerum illum doloribus est eum temporibus nam quas adipisci laborum quisquam ullam in, nesciunt eaque aliquid aut. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam, molestias quisquam dolore dolorum praesentium, optio excepturi eum laudantium obcaecati atque labore distinctio dolor. Itaque repellat error tenetur hic facere. Et.</p>
             </div>
-            <div class="col-lg-6 col-sm-12">
+            <div class="col-lg-6 col-sm-12  wow animate__animated animate__fadeInRightBig">
               <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active" data-bs-interval="10000">
@@ -175,15 +241,15 @@
     <div class="third_section py-5">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-sm-12">
+                <div class="col-lg-4 col-sm-12  wow animate__animated animate__fadeInLeftBig">
                     <h1>Characteristics of a Professional Website</h1>
                 </div>
-                <div class="col-lg-4 col-sm-12">
+                <div class="col-lg-4 col-sm-12  wow animate__animated animate__fadeInUpBig">
                   <p class="small">Absolute</p>
                     <h4>Responsiveness</h4>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam doloremque maxime modi suscipit consequuntur esse incidunt distinctio exercitationem, sunt possimus magnam vero, reiciendis laudantium. Doloremque illo quo quos animi nostrum.</p>
                 </div>
-                <div class="col-lg-4 col-sm-12">
+                <div class="col-lg-4 col-sm-12 wow animate__animated animate__fadeInRightBig">
                     <div class="card" style="width: 18rem;border-color: rgb(55, 111, 133);border-width: 10px;">
                         <img src="images/Responsive+Website+Builder.gif" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -198,7 +264,7 @@
 <div class="forth_section py-5">
   <div class="container">
     <div class="row">
-      <div class="col-lg-6 col-sm-12">
+      <div class="col-lg-6 col-sm-12 wow animate__animated animate__fadeInDown">
         <p class="small">Ultra</p>
         <h4>Creative</h4>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit consequuntur harum fugit expedita temporibus veniam veritatis, dignissimos laborum quibusdam nobis dolores rem repellendus quaerat nam distinctio beatae accusantium mollitia autem!</p>
@@ -209,7 +275,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-6 col-sm-12">
+      <div class="col-lg-6 col-sm-12 wow animate__animated animate__fadeInBottomRight">
         <p class="small">Advanced</p>
         <h4>Animated</h4>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit consequuntur harum fugit expedita temporibus veniam veritatis, dignissimos laborum quibusdam nobis dolores rem repellendus quaerat nam distinctio beatae accusantium mollitia autem!</p>
@@ -284,11 +350,11 @@
 <section id="learn" class="py-5">
   <div class="container">
     <div class="row">
-      <div class="col-lg-6 col-sm-6">
+      <div class="col-lg-6 col-sm-6 wow animate__animated animate__rubberBand animate__repeat-3">
         <h1>Want to learn Web Desiging??</h1>
         <a class="btn btn-primary" href="https://www.youtube.com/watch?v=C72WkcUZvco&list=PLXC_gcsKLD6n7p6tHPBxsKjN5hA_quaPI" role="button">Watch Tutorials >></a>
       </div>
-      <div class="col-lg-6 col-sm-6">
+      <div class="col-lg-6 col-sm-6 wow animate__animated animate__bounceInRight">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/C72WkcUZvco" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>      
       </div>
     </div>
@@ -338,5 +404,9 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     -->
+    <script src="js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
   </body>
 </html>

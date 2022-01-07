@@ -17,11 +17,75 @@
     <link href="https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
     <title>My Blogs</title>
   </head>
   <body>
 
+	<!----Navigation Bar------>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+   
+    <nav class="logo navbar-light bg-light">
+     <div class="container-fluid">
+       <a class="navbar-brand" href="#">
+         <img src="images/log.png" width="80" height="40" alt=""  class="">
+         Learn; Design & Develop
+       </a>
+     </div>
+    </nav>
+   
+    <div class="nav_right">
+     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+       <div class="container-fluid">
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+             <li class="nav-item">
+               <a class="nav-link active" aria-current="page" >Home</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="portfolio.html">Portfolio</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="myBlog.html">Blogs</a>
+             </li>
+             <li class="nav-item">
+               <!-- Button trigger modal -->
+               <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                 Help
+               </button>
+   
+   
+             <!-- Modal -->
+             <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+               <div class="modal-dialog modal-dialog-scrollable">
+                 <div class="modal-content">
+                   <div class="modal-header">
+                     <h5 class="modal-title" id="staticBackdropLabel">Help</h5>
+                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                   </div>
+                   <div class="modal-body">
+                     <p>Learn; Design & Develop is a user frinedly website to help you with the basic and signigicant information of design and develop. The design and development includes about the digital arts. Actually you can explore the all criterias of the 3 Segments of digital design. Those are Graphics Design, Web design and Web Development. If you are not finding the first page of the website, click on the Home on the navigation bar. If you have any query about the informations provided on the website, simply contact us on through the contact form. We'll be very happy to clearify your query which should inhance you skills.</p>
+                   </div>
+                   <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </li>
+          </ul>
+   
+       </div>
+     </div>
+    </div>
+   </div>
+   </nav>
+ <!---breadcrump-->
     <div class="my py-5">
         <div class="container">
             <div class="row pic text-lg-end">
@@ -33,7 +97,7 @@
                     </ol>
                   </nav>
                 </div>
-                <div class="col-lg-6 col-sm-12">
+                <div class="col-lg-6 col-sm-12 wow animate__animated animate__fadeInLeftBig">
                     <h3 class="text-primary">Comments & Opinion</h3>
                     <h1>My Blogs</h1>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos soluta, expedita voluptate necessitatibus nihil corporis voluptatem odit alias voluptas inventore tenetur facilis sunt obcaecati velit corrupti in molestiae officiis! Quibusdam.</p>
@@ -42,14 +106,16 @@
         </div>
     </div>
             <!---blog1-->
-    <div class="blog1 py-5">
+    <div class="blog11 blog1 py-5">
         <div class="container">
-            <div class="row">
-                <h3>How to design a logo??</h3>
+            <div class="row ">
+                <h3 class="wow animate__animated animate__shakeX animate__repeat-2 ">How to design a logo??</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta expedita tempora quasi, ut distinctio maxime similique animi, corrupti reiciendis sit doloribus itaque quidem odit, id fugiat odio rem tempore ratione? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam fuga aut, quasi similique officiis consequatur, omnis a voluptates reprehenderit id magni consequuntur, dignissimos incidunt minus iure esse asperiores doloribus ex!</p>
             </div>
             <div class="row ">
-                <div class="col-lg-6 col-sm-12 car">
+
+
+                <div class="col-lg-6 col-sm-12 car wow animate__animated animate__fadeInLeft">
                     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                           <div class="carousel-item active">
@@ -72,50 +138,33 @@
                         </button>
                       </div>
                 </div>
-                <div class="col-lg-6 col-sm-12 car">
-                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img src="images/bee-2389834_640.png" class="d-block w-100" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="images/camera-2868620_640.png" class="d-block w-100" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="images/lion-309219_640.png" class="d-block w-100" alt="...">
-                          </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Next</span>
-                        </button>
-                      </div>
-                    </div>
+                <div class="col-lg-6 col-sm-12 car pt-3">
+                  <h6>Techniques</h6>
+                  <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nihil consequatur consequuntur quaerat repudiandae repellat, quod est, autem totam, nam quisquam laboriosam beatae voluptate ad soluta enim perferendis magni amet?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, perferendis iusto, reprehenderit saepe enim ipsum obcaecati reiciendis ut velit dolorem nemo ducimus fugiat culpa eius sit sapiente? Rem, distinctio ipsam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure tenetur recusandae cum placeat ullam animi. Vel nesciunt voluptate, commodi officia facere nostrum, nulla accusantium magnam iure quis obcaecati, delectus explicabo.</p>
+                </div>
+
                 </div>
             </div>
             <div class="clear"></div>
+                        <!---Comment-->
+<div class="container py-3">
+  <div class="row wow animate__animated animate__fadeInRight">
+      <h5>Comments</h5>
+          <div class="form-floating">
+               <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+              <label for="floatingTextarea2">Comments</label>
+          </div>
+  </div>
+</div> 
     </div>
-            <!---Comment-->
-<div class="container pb-5">
-    <div class="row">
-        <h5>Comments</h5>
-            <div class="form-floating">
-                 <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-                <label for="floatingTextarea2">Comments</label>
-            </div>
-    </div>
-</div>           
+          
 
 
         <!---blog2-->
 <div class="blog1 py-5">
     <div class="container">
         <div class="row">
-            <h3>Developing Frontend - Backend Communication</h3>
+            <h3 class="wow animate__animated animate__shakeX animate__repeat-2 ">Developing Frontend - Backend Communication</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta expedita tempora quasi, ut distinctio maxime similique animi, corrupti reiciendis sit doloribus itaque quidem odit, id fugiat odio rem tempore ratione? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam fuga aut, quasi similique officiis consequatur, omnis a voluptates reprehenderit id magni consequuntur, dignissimos incidunt minus iure esse asperiores doloribus ex!</p>
         </div>
         <div class="row">
@@ -129,7 +178,7 @@
             <div class="col-lg-6 col-sm-12">
                 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
-                      <div class="carousel-item active">
+                      <div class="carousel-item active wow animate__animated animate__fadeInRight animate_slow">
                         <img src="images/development-4536630_640.png" class="d-block w-100" alt="...">
                       </div>
                     </div>
@@ -141,7 +190,7 @@
 </div>
         <!---Comment-->
 <div class="container pb-5">
-<div class="row">
+<div class="row wow animate__animated animate__fadeInLeft">
     <h5>Comments</h5>
         <div class="form-floating">
              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
@@ -193,5 +242,9 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     -->
+    <script src="js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
   </body>
 </html>

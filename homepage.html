@@ -14,74 +14,87 @@
     <link href="https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
     <title>Home Page</title>
   </head>
   <body>
 
 	<!----Navigation Bar------>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
- <div class="container">
-
- <nav class="logo navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">
-      <img src="images/log.png" width="80" height="40" alt=""  class="">
-      Learn; Design & Develop
-    </a>
-  </div>
- </nav>
-
- <div class="nav_right">
-  <div class="container-fluid">
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="homepage.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="portfolio.html">Portfolio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="myBlog.html">Blogs</a>
-        </li>
-        <li class="nav-item">
-          <!-- Button trigger modal -->
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-            Help
-          </button>
-
-          <!-- Modal -->
-          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-scrollable">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident impedit voluptatibus dolorem aperiam. Placeat praesentium delectus, impedit ipsum dolores voluptatum, sequi, dolor aspernatur sint magni doloremque eveniet quasi repellat deleniti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam laboriosam dolorem tenetur iusto assumenda cupiditate explicabo deleniti ut amet officiis aliquam, perspiciatis, soluta quis illo dolorum commodi eveniet in temporibus?</p>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </li>
-      </ul>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+   
+    <nav class="logo navbar-light bg-light">
+     <div class="container-fluid">
+       <a class="navbar-brand" href="#">
+         <img src="images/log.png" width="80" height="40" alt=""  class="">
+         Learn; Design & Develop
+       </a>
+     </div>
+    </nav>
+   
+    <div class="nav_right">
+     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+       <div class="container-fluid">
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+             <li class="nav-item">
+               <a class="nav-link active" aria-current="page" >Home</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="portfolio.html">Portfolio</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="myBlog.html">Blogs</a>
+             </li>
+             <li class="nav-item">
+               <!-- Button trigger modal -->
+               <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                 Help
+               </button>
+   
+   
+             <!-- Modal -->
+             <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+               <div class="modal-dialog modal-dialog-scrollable">
+                 <div class="modal-content">
+                   <div class="modal-header">
+                     <h5 class="modal-title" id="staticBackdropLabel">Help</h5>
+                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                   </div>
+                   <div class="modal-body">
+                     <p>Learn; Design & Develop is a user frinedly website to help you with the basic and signigicant information of design and develop. The design and development includes about the digital arts. Actually you can explore the all criterias of the 3 Segments of digital design. Those are Graphics Design, Web design and Web Development. If you are not finding the first page of the website, click on the Home on the navigation bar. If you have any query about the informations provided on the website, simply contact us on through the contact form. We'll be very happy to clearify your query which should inhance you skills.</p>
+                   </div>
+                   <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </li>
+          </ul>
+   
+       </div>
+     </div>
     </div>
-  </div>
- </div>
-</div>
-</nav>
+   </div>
+   </nav>
 
 
 <!-----First Section----->
 <div class="first_section d-flex">
  <div class="container d-flex align-items-start">
   <div class="row mb-5">
+    <div class="animate__animated animate__backInDown">
       <h1>Learn ;</h1>
       <h1>Design & Develop</h1>
+    </div>
+
       <ul>
         <li>
           <a href="portfolio.html"><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas">
@@ -94,6 +107,7 @@
           </button>
         </li>
       </ul>
+   
 
       
       <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
@@ -106,13 +120,10 @@
             Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
           </div>
           <div class="dropdown mt-3">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
-              Any Query?
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <li><a class="dropdown-item" href="myBlog.html">Blogs</a></li>
-              <li><a class="dropdown-item" href="contactForm.html">Contact Us</a></li>
-            </ul>
+            <a href="contactForm.html"><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas">
+              Contact Us
+            </button></a>
+
           </div>
         </div>
       </div>
@@ -123,8 +134,8 @@
 <!-----Second Section---->
 <div class="second_section py-5">
  <div class="container">
-  <div class="row">
-   <div class="col-lg-6 col-sm-12">
+  <div class="row  gy-3">
+   <div class="col-lg-6 col-12">
   <!----Carousel----->
 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-indicators">
@@ -153,7 +164,7 @@
   </button>
 </div>
    </div>
-   <div class="col-lg-6 col-sm-12">
+   <div class="col-lg-6 col-12  wow animate__animated animate__lightSpeedInLeft">
    <h1>Graphics Design</h1>
    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>  
    <a class="btn btn-primary" href="graphicsDesign.html" role="button">Check it out>></a>
@@ -166,15 +177,15 @@
 <!-----Third Section---->
 <div class="third_section py-5">
  <div class="container">
-  <div class="row">
+  <div class="row gy-3">
 
-   <div class="col-lg-6 col-sm-12">
+   <div class="col-lg-6 col-12 wow animate__animated animate__lightSpeedInRight">
    <h1>Web Design</h1>
    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>  
    <a class="btn btn-primary" href="webDesign.html" role="button">Check it out>></a>
    </div>
 
-   <div class="col-lg-6 col-sm-12">
+   <div class="col-lg-6 col-12">
   <!----Carousel----->
   <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
@@ -206,8 +217,8 @@
 <!-----Forth Section---->
 <div class="forth_section py-5">
  <div class="container">
-  <div class="row">
-   <div class="col-lg-6 col-sm-12">
+  <div class="row gy-3">
+   <div class="col-lg-6 col-12">
   <!----Carousel----->
   <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
     <div class="carousel-inner">
@@ -231,7 +242,7 @@
     </button>
   </div>
    </div>
-   <div class="col-lg-6 col-sm-12">
+   <div class="col-lg-6 col-12  wow animate__animated animate__lightSpeedInLeft">
    <h1>Web Development</h1>
    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>  
    <a class="btn btn-primary" href="webDevelopment.html" role="button">Check it out>></a>
@@ -244,14 +255,14 @@
 <footer class="footer py-5">
  <div class="container">
   <div class="row">
-   <div class="logo col-lg-6 col-sm-12">
+   <div class="logo col-lg-6 col-12">
     <a class="navbar-brand" href="#">
       <img src="images/log.png" width="80" height="40" alt=""  class="">
       Learn; Design & Develop
     </a>
    </div>
 
-   <div class="f1 col-lg-3 col-sm-6">
+   <div class="f1 col-lg-3 col-6">
     <h6>Tools</h6>
     <ul>
      <li>*Community</li>
@@ -261,7 +272,7 @@
     </ul>
    </div>
 
-   <div class="f2 col-lg-3 col-sm-6">
+   <div class="f2 col-lg-3 col-6">
     <h6>Contact Us</h6>
     <ul>
      <li>>facebook</li>
@@ -294,5 +305,31 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     -->
+
+        <!-- Option 1: wow-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script src="js/wow.min.js"></script>
+        <script>
+        new WOW().init();
+        </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+        <!-- Always get the latest version -->
+<!-- Not recommended for production sites! -->
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+<!-- Get minor updates and patch fixes within a major version -->
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+
+<!-- Get patch fixes within a minor version -->
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0/dist/smooth-scroll.polyfills.min.js"></script>
+
+<!-- Get a specific version -->
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+<script>var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 500
+});
+</script>
   </body>
 </html>
