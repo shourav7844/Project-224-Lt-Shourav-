@@ -337,8 +337,6 @@ footer .f2 ul li{
     font-style: oblique;
 }
 
-.gif{
-}
 
 .navv button{
     box-shadow:
@@ -501,3 +499,29 @@ td{
 .blog2{
     background-color: rgb(4, 223, 175);
 }
+
+#home img{
+   height: 15rem;
+}
+#top img{
+    height: 15rem;
+ }
+
+ #new img{
+    height: 15rem;
+ }
+
+ #abstract img{
+    height: 15rem;
+ }
+ #banner img{
+    height: 15rem;
+ }
+ #D3D img{
+    height: 15rem;
+ }
+ #illustration img{
+    height: 15rem;
+ }
+
+
