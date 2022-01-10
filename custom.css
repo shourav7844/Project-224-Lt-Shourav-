@@ -115,7 +115,7 @@ height: 40rem;
 }
 
 .blog1 .container .car img{
-    max-height: 380px;
+    max-height: 370px;
     max-width: 280;
 }
 
@@ -489,3 +489,15 @@ footer .f2 ul li{
     --animate-duration: 5s;
     --animate-delay: 0.9s;
   }
+
+
+  tr{
+      margin-bottom: 10px;
+  }
+td{
+    margin-right: 15px;
+}
+
+.blog2{
+    background-color: rgb(4, 223, 175);
+}

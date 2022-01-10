@@ -42,13 +42,12 @@
     -->
 
     <script type="module">
-        // Import the functions you need from the SDKs you need
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
-        import { getFirestore, collection, addDoc, getDocs,setDoc ,doc, onSnapshot } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js";
-
+               // Import the functions you need from the SDKs you need
+               import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
+               import { getFirestore, collection, addDoc, getDocs, setDoc, doc, onSnapshot  } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js";
         // TODO: Add SDKs for Firebase products that you want to use
         // https://firebase.google.com/docs/web/setup#available-libraries
-      
+
         // Your web app's Firebase configuration
         const firebaseConfig = {
           apiKey: "AIzaSyD_gaBH0TtyEOZXdCGOCaJ0aFdurx308mA",
@@ -106,3 +105,146 @@ setDoc(doc(db, "Collection_name", email(identifier)), {
   </body>
 </html>
 
+
+<!-------------------Comment Box(Blog 2)---------------->
+  <section>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5 col-md-6 col-12 pb-4">
+                <h1>Comments</h1>
+
+                <div class="comment mt-4 text-justify float-left" id="cmnt_div"> <img src="https://i.imgur.com/yTFUilP.jpg" alt="" class="rounded-circle" width="40" height="40">
+                    <h4 id="users_name" class="d-none"></h4>
+                    <p id="cmnt_p" class="d-none"></p>
+                </div>
+
+                <table class="table table-white">
+                    <thead>
+       
+                    </thead>
+                    <tbody id="tbody1">
+                        
+                    </tbody>
+               </table>
+
+            </div>
+            <div class="col-lg-4 col-md-5 col-sm-4 offset-md-1 offset-sm-1 col-12 mt-4">
+                <form id="algin-form">
+                    <div class="form-group">
+                        <h4>Leave a comment</h4> <label for="message">Message</label> <textarea name="msg" id="cmnt_input" msg cols="30" rows="5" class="form-control" style="background-color: white;"></textarea>
+                    </div>
+                    <div class="form-group"> <label for="name">Name</label> <input type="text" name="name" id="fullname" class="form-control"> </div>
+                    <div class="form-group"> <label for="email">Email</label> <input type="text" name="email" id="email" class="form-control"> </div>
+                    <div class="form-group">
+                        <p class="text-secondary">If you have a gravatar account your address will be used to display your profile picture.</p>
+                    </div>
+                    <div class="form-group"> <button type="button" id="post" class="btn">Post Comment</button> </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+</div>
+
+<!-------------Comment js(blog 2)------------->
+<script type="module">
+
+
+  //--------------get data1----------------
+      var stdNo = 0;
+      var tbody = document.getElementById('tbody2');
+
+      function AddItemToTable(name, comment){
+        let trow = document.createElement("trow");
+        let td1 = document.createElement('td');
+        let td2 = document.createElement('td');
+
+
+        
+        td1.innerHTML = name;
+        td2.innerHTML = comment;
+      
+          trow.appendChild(td1);
+          trow.appendChild(td2);
+
+          tbody.appendChild(trow);
+      }
+
+  function AddAllItemsToTable(Comments_array) {
+      stdNo = 0;
+      tbody.innerHTML="";
+      Comments_array.forEach(element => {
+          AddItemToTable(element.Name, element.Comment);
+      });
+  }
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
+  import { getFirestore, collection, addDoc, getDocs, setDoc, doc, onSnapshot  } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyD_gaBH0TtyEOZXdCGOCaJ0aFdurx308mA",
+    authDomain: "demoproject-6b1be.firebaseapp.com",
+    projectId: "demoproject-6b1be",
+    storageBucket: "demoproject-6b1be.appspot.com",
+    messagingSenderId: "963040741632",
+    appId: "1:963040741632:web:a25affb13d9b7b9d71cbe5"
+  };
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const db = getFirestore();
+
+
+
+  //--------------get data2----------------
+                      async function GetAllDataOnce(){
+      const querySnapshot = await getDocs(collection(db, "Comments"));
+
+      var comment = [];
+
+      querySnapshot.forEach(doc => {
+          comment.push(doc.data());
+      });
+
+      AddAllItemsToTable(comment);
+  }
+  
+  async function GetAllDataRealtime(){
+      const dbRef = collection(db, "Comments1");
+
+      onSnapshot(dbRef, (querySnapshot) => {
+          var comment = [];
+
+          querySnapshot.forEach(doc => {
+              comment.push(doc.data());
+          });
+      AddAllItemsToTable(comment);
+      });
+      
+  }
+  window.onload = GetAllDataRealtime;
+
+
+  //-------------Take input------------------
+  const querySnapshot = await getDocs(collection(db, "Comments1"));
+  querySnapshot.forEach((doc) => {
+      document.getElementById("users_name1").innerHTML  = doc.data()["Name"];
+      document.getElementById("cmnt_p1").innerHTML  = doc.data()["Comment"];
+      console.log(`${doc.id} => ${doc.data()["Name"]}`);
+  });
+
+  document.getElementById("post1").addEventListener('click', runEvent);
+  function runEvent(){
+      let cmnt = document.getElementById("cmnt_input1").value;
+      let fullname = document.getElementById("fullname1").value;
+      let email_ = document.getElementById("email1").value; 
+
+      // Add a new document in collection "cities"
+      setDoc(doc(db, "Comments1", email_), {
+          Name: fullname,
+          Comment: cmnt
+      });            
+  }
+</script>

@@ -106,7 +106,7 @@
         </div>
     </div>
             <!---blog1-->
-    <div class="blog11 blog1 py-5">
+  <div class="blog11 blog1 py-5">
         <div class="container">
             <div class="row ">
                 <h3 class="wow animate__animated animate__shakeX animate__repeat-2 ">How to design a logo??</h3>
@@ -146,59 +146,47 @@
                 </div>
             </div>
             <div class="clear"></div>
-                        <!---Comment-->
-<div class="container py-3">
-  <div class="row wow animate__animated animate__fadeInRight">
-      <h5>Comments</h5>
-          <div class="form-floating">
-               <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-              <label for="floatingTextarea2">Comments</label>
-          </div>
-  </div>
-</div> 
-    </div>
-          
+    <!-------------------Comment Box(Blog 1)---------------->
+    <section>
+      <div class="container">
+          <div class="row">
+              <div class="col-sm-5 col-md-6 col-12 pb-4">
+                  <h1>Comments</h1>
 
-
-        <!---blog2-->
-<div class="blog1 py-5">
-    <div class="container">
-        <div class="row">
-            <h3 class="wow animate__animated animate__shakeX animate__repeat-2 ">Developing Frontend - Backend Communication</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta expedita tempora quasi, ut distinctio maxime similique animi, corrupti reiciendis sit doloribus itaque quidem odit, id fugiat odio rem tempore ratione? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam fuga aut, quasi similique officiis consequatur, omnis a voluptates reprehenderit id magni consequuntur, dignissimos incidunt minus iure esse asperiores doloribus ex!</p>
-        </div>
-        <div class="row">
-            <div class="col-lg-6 col-sm-12 py-5">
-                <h6>Features</h6>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium molestiae voluptates corrupti itaque corporis magnam officia, quasi doloremque. Eaque, molestias eius. Tempora nemo ducimus, deserunt facere facilis iure ipsa blanditiis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus necessitatibus excepturi, deserunt voluptatum alias porro corrupti quod, nostrum molestias earum sunt hic esse quae ut minima, blanditiis iste doloremque quo. 
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores incidunt, earum, est assumenda eos cum impedit veritatis ipsam delectus reiciendis non eum architecto ipsa, dignissimos possimus sunt magni obcaecati tenetur!
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea eveniet aliquid tempora, in deserunt voluptatem expedita quis veritatis sequi voluptates voluptate minima officia eum aperiam sunt, similique odio nisi. Quod.
-                </p>
-            </div>
-            <div class="col-lg-6 col-sm-12">
-                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                      <div class="carousel-item active wow animate__animated animate__fadeInRight animate_slow">
-                        <img src="images/development-4536630_640.png" class="d-block w-100" alt="...">
-                      </div>
-                    </div>
+                  <div class="comment mt-4 text-justify float-left" id="cmnt_div"> <img src="https://i.imgur.com/yTFUilP.jpg" alt="" class="rounded-circle" width="40" height="40">
+                      <h4 id="users_name" class="d-none"></h4>
+                      <p id="cmnt_p" class="d-none"></p>
                   </div>
-                </div>
-            </div>
-        </div>
-        <div class="clear"></div>
-</div>
-        <!---Comment-->
-<div class="container pb-5">
-<div class="row wow animate__animated animate__fadeInLeft">
-    <h5>Comments</h5>
-        <div class="form-floating">
-             <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-            <label for="floatingTextarea2">Comments</label>
-        </div>
-</div>
-</div>  
-  
+
+                  <table class="table table-white">
+                      <thead>
+         
+                      </thead>
+                      <tbody id="tbody1">
+                          
+                      </tbody>
+                 </table>
+
+              </div>
+              <div class="col-lg-4 col-md-5 col-sm-4 offset-md-1 offset-sm-1 col-12 mt-4">
+                  <form id="algin-form">
+                      <div class="form-group">
+                          <h4>Leave a comment</h4> <label for="message">Message</label> <textarea name="msg" id="cmnt_input" msg cols="30" rows="5" class="form-control" style="background-color: white;"></textarea>
+                      </div>
+                      <div class="form-group"> <label for="name">Name</label> <input type="text" name="name" id="fullname" class="form-control"> </div>
+                      <div class="form-group"> <label for="email">Email</label> <input type="text" name="email" id="email" class="form-control"> </div>
+                      <div class="form-group">
+                          <p class="text-secondary">If you have a gravatar account your address will be used to display your profile picture.</p>
+                      </div>
+                      <div class="form-group"> <button type="button" id="post" class="btn btn-primary">Post Comment</button> </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+    </section> 
+    <div class="form-group container"> <a  href="myblog1.html"><button type="button" id="" class="btn btn-primary">More Blogs....>></button></a> </div>
+  </div>
+          
 
 <!---Footer---->
 <footer class="footer py-5">
@@ -246,5 +234,113 @@
     <script>
     new WOW().init();
     </script>
+
+<!-------------Comment js(blog 1)------------->
+<script type="module">
+
+
+  //--------------get data1----------------
+      var stdNo = 0;
+      var tbody = document.getElementById('tbody1');
+
+      function AddItemToTable(name, comment){
+        let trow = document.createElement("trow");
+        let td1 = document.createElement('td');
+        let td2 = document.createElement('td');
+
+
+        
+        td1.innerHTML = name;
+        td2.innerHTML = comment;
+      
+          trow.appendChild(td1);
+          trow.appendChild(td2);
+
+          tbody.appendChild(trow);
+      }
+
+  function AddAllItemsToTable(Comments_array) {
+      stdNo = 0;
+      tbody.innerHTML="";
+      Comments_array.forEach(element => {
+          AddItemToTable(element.Name, element.Comment);
+      });
+  }
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
+  import { getFirestore, collection, addDoc, getDocs, setDoc, doc, onSnapshot  } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyD_gaBH0TtyEOZXdCGOCaJ0aFdurx308mA",
+    authDomain: "demoproject-6b1be.firebaseapp.com",
+    projectId: "demoproject-6b1be",
+    storageBucket: "demoproject-6b1be.appspot.com",
+    messagingSenderId: "963040741632",
+    appId: "1:963040741632:web:a25affb13d9b7b9d71cbe5"
+  };
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const db = getFirestore();
+
+
+
+  //--------------get data2----------------
+                      async function GetAllDataOnce(){
+      const querySnapshot = await getDocs(collection(db, "Comments"));
+
+      var comment = [];
+
+      querySnapshot.forEach(doc => {
+          comment.push(doc.data());
+      });
+
+      AddAllItemsToTable(comment);
+  }
+  
+  async function GetAllDataRealtime(){
+      const dbRef = collection(db, "Comments");
+
+      onSnapshot(dbRef, (querySnapshot) => {
+          var comment = [];
+
+          querySnapshot.forEach(doc => {
+              comment.push(doc.data());
+          });
+      AddAllItemsToTable(comment);
+      });
+      
+  }
+  window.onload = GetAllDataRealtime;
+
+
+  //-------------Take input------------------
+  const querySnapshot = await getDocs(collection(db, "Comments"));
+  querySnapshot.forEach((doc) => {
+      document.getElementById("users_name").innerHTML  = doc.data()["Name"];
+      document.getElementById("cmnt_p").innerHTML  = doc.data()["Comment"];
+      console.log(`${doc.id} => ${doc.data()["Name"]}`);
+  });
+
+  document.getElementById("post").addEventListener('click', runEvent);
+  function runEvent(){
+      let cmnt = document.getElementById("cmnt_input").value;
+      let fullname = document.getElementById("fullname").value;
+      let email_ = document.getElementById("email").value; 
+
+      // Add a new document in collection "cities"
+      setDoc(doc(db, "Comments", email_), {
+          Name: fullname,
+          Comment: cmnt
+      });            
+  }
+</script>
+
+
+
+
+
   </body>
 </html>
