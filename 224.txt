@@ -8,14 +8,17 @@ Bootstrap components
 7. Grid
 8. Collapse
 9. Breadcrumb
+10. Rating
+11.Spinners
 
 
 
-nav&tab
-hamburgur
-graphics video rating
-add navbar to each page
-to keep color combination same
-validation
+
+1.WOW.js
+2.animate.css
+
+1.firebase comment
+2.Rating
+
 
 https://shourav7844.github.io/Project-224-Lt-Shourav-/

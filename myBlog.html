@@ -45,7 +45,7 @@
          <div class="collapse navbar-collapse" id="navbarSupportedContent">
            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
              <li class="nav-item">
-               <a class="nav-link active" aria-current="page" >Home</a>
+               <a class="nav-link" href="homepage.html">Home</a>
              </li>
              <li class="nav-item">
                <a class="nav-link" href="portfolio.html">Portfolio</a>
@@ -324,12 +324,17 @@
       console.log(`${doc.id} => ${doc.data()["Name"]}`);
   });
 
+
+
   document.getElementById("post").addEventListener('click', runEvent);
+
+
+
+
   function runEvent(){
       let cmnt = document.getElementById("cmnt_input").value;
       let fullname = document.getElementById("fullname").value;
       let email_ = document.getElementById("email").value; 
-
       // Add a new document in collection "cities"
       setDoc(doc(db, "Comments", email_), {
           Name: fullname,
