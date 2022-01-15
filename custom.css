@@ -328,20 +328,27 @@ footer .f2 ul li{
 
 }
 .weeb{
-    background-color: rgb(255, 255, 255);
     padding: 10px 20px;
     width: 250px;
     margin-bottom: 0px;
-    color: rgba(22, 207, 136, 0.61);
-    font-style: oblique;  
+    color: rgb(255, 255, 255);
+    font-style: oblique; 
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+     box-shadow: 0 10px 6px -6px #777;
+  border-radius: 10px;
 }
 .weebb{
-    background-color: rgba(22, 207, 136, 0.61);
     padding: 10px 20px;
     width: 350px;
     margin-top: 0px;
     color: white;
     font-style: oblique;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777;
+  border-radius: 10px;
+
 }
 
 
@@ -408,7 +415,7 @@ footer .f2 ul li{
   border-radius: 5px;
 }
 .webcard img{
-    height: 15rem;
+    height: 10rem;
 }
 
 .blk h6{
