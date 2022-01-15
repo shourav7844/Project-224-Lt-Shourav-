@@ -1,3 +1,16 @@
+*{
+    padding: 0;
+    margin: 0;
+    }
+
+#preloader{
+    background: #fff url(images/loader.gif) no-repeat center center;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 100;
+}
+
 .logo{
 float: left;
 }
@@ -188,9 +201,9 @@ ul li{
 }
       
 .home{
-        background-image: url(fg.jpg);  
+        background-image: url(images/portfolio_background.jpg);  
         width: 100%;
-        height: 42rem auto;
+        height: 30rem;
         background-size: cover;
         background-position: center;
         z-index: 2;
@@ -199,15 +212,9 @@ ul li{
     }
     
     
-.home::after{
-        content: "";
-        background-color: black;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        opacity: .6;
-        z-index: -1;
-    }
+.home p{
+    color:rgb(7, 87, 124);
+}
 
 
 .no{
@@ -356,12 +363,29 @@ footer .f2 ul li{
     font-style: oblique;  
 }
 .weebbd{
-    background-color: rgb(112, 233, 221);
     padding: .5rem .5rem .5rem .5rem;
     margin-top: 0px;
     color: white;
     font-style: oblique;
     width: 40rem;
+    border-radius: 1rem;
+}
+
+.type{
+    color: red;
+}
+
+.type1{
+    color: rgb(0, 0, 0);
+    font-family: 'Times New Roman', Times, serif;
+}
+.type2{
+    color: rgb(0, 0, 0);
+    font-family: 'Times New Roman', Times, serif;
+}
+.type3{
+    color: rgb(0, 0, 0);
+    font-family: 'Times New Roman', Times, serif;
 }
 .weed{
     font-family: 'Acme', sans-serif;
@@ -382,6 +406,9 @@ footer .f2 ul li{
   ;
   justify-content: center;
   border-radius: 5px;
+}
+.webcard img{
+    height: 15rem;
 }
 
 .blk h6{
@@ -504,7 +531,8 @@ td{
    height: 15rem;
 }
 .iimg img{
-    height: 35rem;
+    height: 33rem;
+    width: 45rem;
  }
 
 #top img{
@@ -660,4 +688,8 @@ td{
 
 .title_web img{
     border-radius: 20%;
+}
+
+.leave_c{
+    background-color: rgba(121, 121, 121, 0.479);
 }

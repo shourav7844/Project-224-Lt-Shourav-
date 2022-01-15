@@ -19,9 +19,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
-    <title>My Blogs</title>
+    <title>Logo Design</title>
   </head>
   <body>
+
+    <div id="preloader"></div>
 
 	<!----Navigation Bar------>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -37,52 +39,59 @@
     </nav>
    
     <div class="nav_right">
-     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-       <div class="container-fluid">
-         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-           <span class="navbar-toggler-icon"></span>
-         </button>
-         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-             <li class="nav-item">
-               <a class="nav-link" href="homepage.html">Home</a>
-             </li>
-             <li class="nav-item">
-               <a class="nav-link" href="portfolio.html">Portfolio</a>
-             </li>
-             <li class="nav-item">
-               <a class="nav-link" href="myBlog.html">Blogs</a>
-             </li>
-             <li class="nav-item">
-               <!-- Button trigger modal -->
-               <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                 Help
-               </button>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="homepage.html">Home</a>
+                </li>
+                <li class="nav-item">
+                 <a class="nav-link" href="graphicsDesign.html">Graphics Design</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="webDesign.html">Web Design</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="webDevelopment.html">Web Development</a>
+               </li>
    
-   
-             <!-- Modal -->
-             <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-               <div class="modal-dialog modal-dialog-scrollable">
-                 <div class="modal-content">
-                   <div class="modal-header">
-                     <h5 class="modal-title" id="staticBackdropLabel">Help</h5>
-                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                   </div>
-                   <div class="modal-body">
-                     <p>Learn; Design & Develop is a user frinedly website to help you with the basic and signigicant information of design and develop. The design and development includes about the digital arts. Actually you can explore the all criterias of the 3 Segments of digital design. Those are Graphics Design, Web design and Web Development. If you are not finding the first page of the website, click on the Home on the navigation bar. If you have any query about the informations provided on the website, simply contact us on through the contact form. We'll be very happy to clearify your query which should inhance you skills.</p>
-                   </div>
-                   <div class="modal-footer">
-                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                   </div>
-                 </div>
-               </div>
-             </div>
-           </li>
-          </ul>
-   
+                <li class="nav-item">
+                  <a class="nav-link" href="MyBlogs/blog_main.html">Blogs</a>
+                </li>
+                <li class="nav-item">
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    Help
+                  </button>
+      
+      
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Help</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <p>Learn; Design & Develop is a user frinedly website to help you with the basic and signigicant information of design and develop. The design and development includes about the digital arts. Actually you can explore the all criterias of the 3 Segments of digital design. Those are Graphics Design, Web design and Web Development. If you are not finding the first page of the website, click on the Home on the navigation bar. If you have any query about the informations provided on the website, simply contact us on through the contact form. We'll be very happy to clearify your query which should inhance you skills.</p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+             </ul>
+      
+          </div>
+        </div>
        </div>
-     </div>
-    </div>
    </div>
    </nav>
  <!---breadcrump-->
@@ -93,15 +102,12 @@
                   <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                       <li class="breadcrumb-item"><a href="homepage.html">Home</a></li>
-                      <li class="breadcrumb-item active" aria-current="page">My Blogs</li>
+                      <li class="breadcrumb-item"><a href="MyBlogs/blog_main.html">My Blogs</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Blog1</li>
                     </ol>
                   </nav>
                 </div>
-                <div class="col-lg-6 col-sm-12 wow animate__animated animate__fadeInLeftBig">
-                    <h3 class="text-primary">Comments & Opinion</h3>
-                    <h1>My Blogs</h1>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos soluta, expedita voluptate necessitatibus nihil corporis voluptatem odit alias voluptas inventore tenetur facilis sunt obcaecati velit corrupti in molestiae officiis! Quibusdam.</p>
-                </div>
+                <div class="col-lg-6 col-sm-12"></div>
             </div>
         </div>
     </div>
@@ -146,46 +152,40 @@
                 </div>
             </div>
             <div class="clear"></div>
-    <!-------------------Comment Box(Blog 1)---------------->
-    <section>
-      <div class="container">
-          <div class="row">
-              <div class="col-sm-5 col-md-6 col-12 pb-4">
-                  <h1>Comments</h1>
-
-                  <div class="comment mt-4 text-justify float-left" id="cmnt_div"> <img src="https://i.imgur.com/yTFUilP.jpg" alt="" class="rounded-circle" width="40" height="40">
-                      <h4 id="users_name" class="d-none"></h4>
-                      <p id="cmnt_p" class="d-none"></p>
-                  </div>
-
-                  <table class="table table-white">
-                      <thead>
-         
-                      </thead>
-                      <tbody id="tbody1">
-                          
-                      </tbody>
-                 </table>
-
-              </div>
-              <div class="col-lg-4 col-md-5 col-sm-4 offset-md-1 offset-sm-1 col-12 mt-4">
-                  <form id="algin-form">
-                      <div class="form-group">
-                          <h4>Leave a comment</h4> <label for="message">Message</label> <textarea name="msg" id="cmnt_input" msg cols="30" rows="5" class="form-control" style="background-color: white;"></textarea>
-                      </div>
-                      <div class="form-group"> <label for="name">Name</label> <input type="text" name="name" id="fullname" class="form-control"> </div>
-                      <div class="form-group"> <label for="email">Email</label> <input type="text" name="email" id="email" class="form-control"> </div>
-                      <div class="form-group">
-                          <p class="text-secondary">If you have a gravatar account your address will be used to display your profile picture.</p>
-                      </div>
-                      <div class="form-group"> <button type="button" id="post" class="btn btn-primary">Post Comment</button> </div>
-                  </form>
-              </div>
-          </div>
-      </div>
-    </section> 
-    <div class="form-group container"> <a  href="myblog1.html"><button type="button" id="" class="btn btn-primary">More Blogs....>></button></a> </div>
   </div>
+      <!-------------------Comment Box(Blog 1)---------------->
+      <section class="py-5 leave_c">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-12 col-sm-12">
+                    <h1>Comments</h1>
+  
+                    <div class="container cont"></div>
+                  <br><br>
+                </div>
+                <div class="col-lg-6 col-12 col-sm-12">
+                  <form id="comments">
+                      <div class="form-group">
+                          <h4>Leave a comment</h4> <label for="message">Message</label>
+                      </div>
+                      <div class="mb-3">
+                          <label for="name" class="form-label">Name</label>
+                          <input id="name" name="name" type="text" class="form-control" autocomplete="">
+                      </div>
+                      <div class="mb-3">
+                          <label for="email" class="form-label">email</label>
+                          <input id="email" name="email" type="text" class="form-control" autocomplete="">
+                      </div> 
+                      <div class="mb-3">
+                          <label for="comment" class="form-label">Write a Comment</label>
+                          <textarea id="comment" name="comment" class="form-control"></textarea>
+                      </div>
+                      <button class="btn btn-outline-primary">Post Comment</button>
+                  </form>
+                </div>
+            </div>
+        </div>
+      </section> 
           
 
 <!---Footer---->
@@ -225,127 +225,51 @@
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    -->
+   <!----wow.js-->
     <script src="js/wow.min.js"></script>
     <script>
     new WOW().init();
     </script>
 
+
+        <!-----preloader.js------>
+        <script>
+          var loader = document.getElementById("preloader");
+          window.addEventListener("load", function(){
+            loader.style.display = "none";
+          })
+        </script>
+
 <!-------------Comment js(blog 1)------------->
-<script type="module">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+crossorigin="anonymous"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-firestore.js"></script>
+<script>
 
 
-  //--------------get data1----------------
-      var stdNo = 0;
-      var tbody = document.getElementById('tbody1');
+//----------It is of the firestore link(to be changed)-------------
+var firebaseConfig = {
+  apiKey: "AIzaSyBGENhVpvgtM4LOHG_2rn1tSEt5jAPOAAA",
+  authDomain: "comment-5705e.firebaseapp.com",
+  projectId: "comment-5705e",
+  storageBucket: "comment-5705e.appspot.com",
+  messagingSenderId: "301620436219",
+  appId: "1:301620436219:web:94a5e3873ffce3622da45e"
+};
 
-      function AddItemToTable(name, comment){
-        let trow = document.createElement("trow");
-        let td1 = document.createElement('td');
-        let td2 = document.createElement('td');
-
-
-        
-        td1.innerHTML = name;
-        td2.innerHTML = comment;
-      
-          trow.appendChild(td1);
-          trow.appendChild(td2);
-
-          tbody.appendChild(trow);
-      }
-
-  function AddAllItemsToTable(Comments_array) {
-      stdNo = 0;
-      tbody.innerHTML="";
-      Comments_array.forEach(element => {
-          AddItemToTable(element.Name, element.Comment);
-      });
-  }
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
-  import { getFirestore, collection, addDoc, getDocs, setDoc, doc, onSnapshot  } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
-
-  // Your web app's Firebase configuration
-  const firebaseConfig = {
-    apiKey: "AIzaSyD_gaBH0TtyEOZXdCGOCaJ0aFdurx308mA",
-    authDomain: "demoproject-6b1be.firebaseapp.com",
-    projectId: "demoproject-6b1be",
-    storageBucket: "demoproject-6b1be.appspot.com",
-    messagingSenderId: "963040741632",
-    appId: "1:963040741632:web:a25affb13d9b7b9d71cbe5"
-  };
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const db = getFirestore();
+//------------Upto this------------------------
 
 
-
-  //--------------get data2----------------
-                      async function GetAllDataOnce(){
-      const querySnapshot = await getDocs(collection(db, "Comments"));
-
-      var comment = [];
-
-      querySnapshot.forEach(doc => {
-          comment.push(doc.data());
-      });
-
-      AddAllItemsToTable(comment);
-  }
-  
-  async function GetAllDataRealtime(){
-      const dbRef = collection(db, "Comments");
-
-      onSnapshot(dbRef, (querySnapshot) => {
-          var comment = [];
-
-          querySnapshot.forEach(doc => {
-              comment.push(doc.data());
-          });
-      AddAllItemsToTable(comment);
-      });
-      
-  }
-  window.onload = GetAllDataRealtime;
-
-
-  //-------------Take input------------------
-  const querySnapshot = await getDocs(collection(db, "Comments"));
-  querySnapshot.forEach((doc) => {
-      document.getElementById("users_name").innerHTML  = doc.data()["Name"];
-      document.getElementById("cmnt_p").innerHTML  = doc.data()["Comment"];
-      console.log(`${doc.id} => ${doc.data()["Name"]}`);
-  });
-
-
-
-  document.getElementById("post").addEventListener('click', runEvent);
-
-
-
-
-  function runEvent(){
-      let cmnt = document.getElementById("cmnt_input").value;
-      let fullname = document.getElementById("fullname").value;
-      let email_ = document.getElementById("email").value; 
-      // Add a new document in collection "cities"
-      setDoc(doc(db, "Comments", email_), {
-          Name: fullname,
-          Comment: cmnt
-      });            
-  }
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+const db = firebase.firestore();
 </script>
 
 
-
-
+<!---app.js-->
+<script src="js/app.js"></script>
 
   </body>
 </html>
